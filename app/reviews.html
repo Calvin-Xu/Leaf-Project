@@ -13,7 +13,7 @@
     </ul>
 
     <!--  Review Form -->
-    <form name="reviewForm" role="form" ng-controller="ReviewController as reviews" ng-submit="reviews.addReview(product)">
+    <form name="reviewForm" ng-controller="ReviewController as reviews" role="form" ng-submit="reviews.addReview(product)">
         <!--  Live Preview -->
         <blockquote ng-show="reviews.review.stars">
             <strong>{{reviews.review.stars}} Stars<br></strong>
