@@ -1,0 +1,124 @@
+body{
+  max-width: 630px;
+  margin: 0 auto;
+}
+
+ h1 {
+   color: #ea503f;
+   font-family: georgia;
+ }
+
+ h2 {
+   color: #f28b1d;
+   font-family: courier;
+ }
+
+ h4 {
+     font-family: "Trebuchet MS";
+ }
+
+ blockquote {
+     font-family: Georgia;
+ }
+
+
+a {
+  color: #1faec4;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+ul{
+  padding: 0;
+}
+
+li{
+  list-style: none;
+    font-family: "Trebuchet MS";
+    font-size: large;
+}
+
+li.small-image{
+  width: 50px;
+}
+
+li.small-image img{
+  width: 100%;
+}
+
+img{
+  max-width: 370px;
+  max-height: 370px;
+}
+
+img:hover {
+    box-shadow: 1px 1px #53a7ea,
+    2px 2px #53a7ea,
+    3px 3px #53a7ea;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.img-wrap {
+  background: #f8f8f8;
+  height: 390px;
+  margin: 0 auto 20px;
+  padding: 10px;
+  width: 510px;
+}
+
+.img-thumbnail {
+  background: none;
+  border: 0;
+  height: auto;
+  max-width: 100%;
+}
+
+.img-thumbnails {
+  margin: 0 auto 10px;
+  width: 200px;
+}
+
+.img-thumbnails .thumbnail {
+  background: #f8f8f8;
+  border: 0;
+  margin-right: 25px;
+  min-height: 40px;
+}
+
+.img-thumbnails .thumbnail:last-child {
+  margin-right: 0;
+}
+
+.nav-pills {
+  margin-bottom: 30px;
+}
+
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus{
+  color: #4ec41f;
+}
+
+.nav-pills > li.active > a,
+.btn-primary,
+.btn-primary:focus {
+  background: #4ec41f;
+  border: 0;
+}
+
+.nav-pills > li.active > a:hover,
+.btn-primary:hover {
+  background: #4ec41f;
+}
+
+.ng-invalid.ng-dirty {
+    border-color: red;
+}
+
+.ng-valid.ng-dirty {
+    border-color: green;
+}

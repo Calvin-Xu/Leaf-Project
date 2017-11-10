@@ -1,0 +1,41 @@
+<div>
+    <!--  Product Reviews List -->
+    <ul>
+        <h4> Reviews </h4>
+        <li ng-repeat="review in product.reviews track by $index">
+
+            <blockquote>
+                <strong>{{review.stars}} Stars<br></strong>
+                {{review.body}}
+                <cite class="clearfix">—{{review.author}}  on {{review.createdOn | date}}</cite>
+            </blockquote>
+        </li>
+    </ul>
+
+    <!--  Review Form -->
+    <form name="reviewForm" role="form" ng-controller="ReviewController as reviews" ng-submit="reviews.addReview(product)">
+        <!--  Live Preview -->
+        <blockquote ng-show="reviews.review.stars">
+            <strong>{{reviews.review.stars}} Stars<br></strong>
+            {{reviews.review.body}}
+            <cite class="clearfix">—{{reviews.review.author}}</cite>
+        </blockquote>
+
+        <!--  Review Form -->
+        <h4>Submit a Review</h4>
+        <fieldset class="form-group">
+            <select ng-model="reviews.review.stars" class="form-control" ng-options="stars for stars in [5,4,3,2,1]" title="Stars">
+                <option value="">Rate the leaf</option>
+            </select>
+        </fieldset>
+        <fieldset class="form-group">
+            <textarea ng-model="reviews.review.body" class="form-control" placeholder="Write a short review of the leaf..." title="Review"></textarea>
+        </fieldset>
+        <fieldset class="form-group">
+            <input ng-model="reviews.review.author" type="email" class="form-control" placeholder="xup@avonoldfarms.com" title="Email" />
+        </fieldset>
+        <fieldset class="form-group">
+            <input type="submit" class="btn btn-primary pull-right" value="Submit Review" ng-click="click(product.name, reviews.review.stars, reviews.review.body, reviews.review.author)"/>
+        </fieldset>
+    </form>
+</div>
