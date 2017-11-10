@@ -4,7 +4,7 @@
     var app = angular.module('leafCollection', ['store-directives', 'ngSanitize']);
 
     app.controller('GalleryController', function () {
-        this.imageIndex = 0;
+        this.imageIndex = 0; // What if the array is 0 length?
         this.currentImageChange = function (imageNumber) {
             console.log(imageNumber);
             this.imageIndex = imageNumber || 0;
@@ -59,14 +59,6 @@
         $scope.myHTML4 = $sce.trustAsHtml("<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1032.6546392389187!2d-72.82281482795534!3d41.778511136263575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1509053047834\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>");
     });
 
-    function httpGet(theUrl)
-    {
-        var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open( "GET", theUrl, false );
-        xmlHttp.send( null );
-        return xmlHttp.response;
-    }
-
 
     var leaves = [{
         name: 'Northern Red Oak',
@@ -98,7 +90,7 @@
             "img/YP-02.JPG",
             "img/YP-03.JPG"
         ],
-        reviews:
+        reviews:[]
     }, {
         name: 'White Oak',
         description: "White oak is one of the preeminent hardwoods of eastern and central North America. It is a long-lived oak. Specimens have been documented to be over 450 years old.",
