@@ -72,12 +72,7 @@
             "img/NRO-02.jpg",
             "img/NRO-03.jpg"
         ],
-        reviews: [{
-            stars: 5,
-            body: "First time I see a strange leaf like this.",
-            author: "xup@avonoldfarms.com",
-            createdOn: 1508840073000
-        }]
+        reviews: []
     }, {
         name: 'Yellow Poplar',
         description: "Yellow Poplar is the Western Hemisphere representative of the two-species genus Liriodendron, and the tallest eastern hardwood. It is native to eastern North America.",
@@ -103,12 +98,7 @@
             "img/WO-02.jpg",
             "img/WO-03.jpg"
         ],
-        reviews: [{
-            stars: 3,
-            body: "Weird leaf. Easy enough to identify though.",
-            author: "xup@avonoldfarms.com",
-            createdOn: 1508840073000
-        }]
+        reviews: []
     }, {
         name: 'Sugar Maple',
         description: "Sugar maple is a species of maple native to eastern Canada and the northern parts of the Central and Eastern United States. It is best known for its bright fall foliage and for being the primary source of maple syrup.",
@@ -121,12 +111,7 @@
             "img/SM-02.jpg",
             "img/SM-03.jpg"
         ],
-        reviews: [{
-            stars: 5,
-            body: "Big cool leaf. Notice the round turnings that is useful for identification.",
-            author: "xup@avonoldfarms.com",
-            createdOn: 1508840073000
-        }]
+        reviews: []
     }, {
         name: 'Sassafras',
         description: "Sassafras is a genus of three extant and one extinct species of deciduous trees in the family Lauraceae, native to eastern North America and eastern Asia. The genus is distinguished by its aromatic properties, which have made the tree useful to humans.",
@@ -140,12 +125,7 @@
             "img/S-02.JPG",
             "img/S-03.JPG"
         ],
-        reviews: [{
-            stars: 5,
-            body: "Weird leaf I like it!",
-            author: "xup@avonoldfarms.com",
-            createdOn: 1508840073000
-        }]
+        reviews: []
     }, {
         name: 'American Beech',
         description: "Fagus grandifolia (American beech or North American beech) is the species of beech tree native to the eastern United States and extreme southeast Canada. Its leaves are dark green, simple and sparsely-toothed with small teeth that terminate each vein.",
@@ -158,12 +138,7 @@
             "img/AB-02.jpg",
             "img/AB-03.jpg"
         ],
-        reviews: [{
-            stars: 4,
-            body: "Large leaf. Feels smooth & wax-like.",
-            author: "xup@avonoldfarms.com",
-            createdOn: 1508840073000
-        }]
+        reviews: []
     }, {
         name: 'Black Birch',
         description: "Black Birch is a species of birch native to eastern North America. It is a medium-sized deciduous tree reaching 25 m tall with a trunk up to 60 cm diameter.",
@@ -176,12 +151,7 @@
             "img/BB-02.jpg",
             "img/BB-03.jpg"
         ],
-        reviews: [{
-            stars: 5,
-            body: "Nice leaf & nice photo. Notice the jagged edges.",
-            author: "xup@avonoldfarms.com",
-            createdOn: 1508840073000
-        }]
+        reviews: []
     }];
 
 })();

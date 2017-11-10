@@ -15,7 +15,7 @@ app.directive("reviews", function () {
             this.$onInit = function () {
                 $http.get('http://localhost:8080/comments/' + encodeURIComponent($scope.product.name))
                     .then(function (success) {
-                        $scope.product.reviews = success;
+                        $scope.product.reviews = success.data;
                     }, function (fail) {
                         alert("Failed to fetch comments!")
                     });
