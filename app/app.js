@@ -36,15 +36,15 @@
                 }
             );
 
-            response.success(function () {
-
-                alert("Ok.");
-
-            });
-
-            response.error(function () {
-                alert("Error.");
-            });
+            // response.success(function () {
+            //
+            //     alert("Ok.");
+            //
+            // });
+            //
+            // response.error(function () {
+            //     alert("Error.");
+            // });
 
         };
 
