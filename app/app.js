@@ -20,7 +20,7 @@
         this.review = {};
 
         this.addReview = function (product) {
-            this.review.createdOn = Date.now();
+            this.review.time = Date.now();
             product.reviews.push(this.review);
             this.review = {};
         };
@@ -36,21 +36,19 @@
                 }
             );
 
-            response.success(function(data, status, headers, config) {
+            response.success(function () {
 
                 alert("Ok.");
 
             });
 
-            response.error(function(data, status, headers, config) {
+            response.error(function () {
                 alert("Error.");
             });
 
         };
 
     });
-
-    // change product.reviews from an array written in this js file to an array read from db-comments
 
     app.controller('mapCtrl', function ($scope, $sce) {
         $scope.myHTML1 = $sce.trustAsHtml("<iframe src=\"https://www.google.com/maps/embed?pb=!1m13!1m11!1m3!1d788.0725307226264!2d-72.8379642437004!3d41.775270710863836!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1508894585937\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>");
@@ -75,7 +73,7 @@
         reviews: []
     }, {
         name: 'Yellow Poplar',
-        description: "Yellow Poplar is the Western Hemisphere representative of the two-species genus Liriodendron, and the tallest eastern hardwood. It is native to eastern North America.",
+        description: "Yellow Poplar is the Western Hemisphere representative of the two-species genus Liriodendron. It is the tallest eastern hardwood and native to eastern North America.",
         location: "XC: Rails to Trails",
         map_id: 3,
         price: 6,
